@@ -26,7 +26,7 @@
     </div>
     <div style="width: 301px" >
         Enter Your Password:&nbsp;&nbsp;
-        <asp:TextBox ID="passwordTextBox" runat="server" Height="16px"></asp:TextBox>
+        <asp:TextBox ID="passwordTextBox" runat="server" Height="16px" TextMode="Password"></asp:TextBox>
     </div>
     <div class="auto-style2" >
         <asp:Button ID="loginButton" runat="server" Text="Login" OnClick="loginButton_Click" BorderWidth="1px" />

@@ -21,8 +21,17 @@ namespace MichaelBaldwinLab1
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            userTextBox.ToolTip = "Enter Username here.";
+            nextButton.ToolTip = "Navigate to next page";
+            loginButton.ToolTip = "Login";
+            clearButton.ToolTip = "Clear form.";
+            passwordTextBox.ToolTip = "Enter Password here.";
+            welcomeLabel.ToolTip = "Welcome!";
+            infoCheckBox.ToolTip = "Next screen info.";
+            pageInfoLabel.ToolTip = "Info about next page.";
+
             try
-            {
+            { //Set image locations.
                 User0.userImageLocation = "Assets/cat.jpg";
                 User1.userImageLocation = "Assets/tiger.jpg";
                 User2.userImageLocation = "Assets/dog.png";
@@ -32,14 +41,14 @@ namespace MichaelBaldwinLab1
 
 
 
-            UserList[0] = User0;
+            UserList[0] = User0; //Assign users to list.
             UserList[1] = User1;
             UserList[2] = User2;
 
         }
 
         protected void loginButton_Click(object sender, EventArgs e)
-        {
+        { //Login check
             foreach (User user in UserList)
             {
                 if (user.Name.ToLower() == userTextBox.Text.ToLower() && user.Password == passwordTextBox.Text)

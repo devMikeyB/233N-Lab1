@@ -14,7 +14,11 @@ namespace MichaelBaldwinLab1
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            stateRadioButtonList.ToolTip = "Select State of interest.";
+            populationDropDownList.ToolTip = "Select State of interest to see population.";
+            stateInfoLabel.ToolTip = "Info on state.";
+            stateImage.ToolTip = "Selected state image.";
+            prevButton.ToolTip = "Navigate to previous page.";
         }
 
         protected void stateRadioButtonList_SelectedIndexChanged(object sender, EventArgs e)
