@@ -10,7 +10,7 @@ using System.Windows.Forms;
 namespace MichaelBaldwinLab1
 {
     public partial class Default : System.Web.UI.Page
-    {
+    { 
         //Init Array of users.
         internal User[] UserList = new User[3];
         //Create users using User class.
